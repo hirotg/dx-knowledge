@@ -49,6 +49,16 @@ ssh-keygen -t ed25519 -C "メールアドレス"
 - 左メニュー [SSH and GPG Keys]を選択
 - 公開鍵を登録する
 
+## config の作成
+- ./config ファイルを作成する
+
+````
+Host github.com
+    HostName github.com
+    IdentityFile ~/.ssh/id_ed25519_github
+    User git
+````
+
 ## SSH接続確認
 ````
 ssh -T git@github.com
