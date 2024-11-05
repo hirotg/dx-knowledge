@@ -36,3 +36,21 @@
 - git branch -m ブランチ
 現在のブランチの名称を変更する
 
+# SSH
+
+## SSHキーを生成する
+````
+ssh-keygen -t ed25519 -C "メールアドレス"
+````
+
+## SSH公開鍵を GitHub へ登録する
+- 右上アイコンを選択
+- [Settings]を選択
+- 左メニュー [SSH and GPG Keys]を選択
+- 公開鍵を登録する
+
+## SSH接続確認
+````
+ssh -T git@github.com
+````
+
